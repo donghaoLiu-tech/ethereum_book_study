@@ -9,7 +9,7 @@
 - 服务提供商提供的基于云的以太坊客户端,参见`infura`
 - 轻量级客户端,不会存储区块链的本地副本或验证块和交易,可以创建和广播交易
 
-## 轻量级以太坊客户
+## 轻量级以太坊客户端
 - 管理钱包中的私钥和以太坊地址
 - 创建，签署和广播交易
 - 使用数据与智能合约进行交互
@@ -27,11 +27,14 @@
 - SPV参考: https://www.jianshu.com/p/39be41dfb5fa
 - `Merkle Tree`: https://brilliant.org/wiki/merkle-tree/  
   
-**Merkle Tree**     
+**Merkle Tree**    
+ 
 ![Merkle Tree_Efficiency](images/Merkle_trees.png)  
 
 
-**Merkle Tree的效率模拟**
+
+**Merkle Tree的效率模拟**    
+
 ![Merkle Tree_Efficiency](images/merkle_tree_effeciency.webp)   
 
 当区块大小由16笔交易（4KB）急剧增加至65,535笔交易（16MB）时，Merkle的搜索路径长度增长却极其缓慢。这样一来，只需要一个区块头部结构，再加一个这样的搜索路径的开销，一个节点就能花费很小的代价快速定位一个交易
