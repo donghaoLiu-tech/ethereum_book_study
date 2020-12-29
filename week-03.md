@@ -1,3 +1,5 @@
+- [密钥和地址](#密钥和地址)
+- [椭圆曲线算法(Elliptic curve cryptography)](#椭圆曲线算法elliptic-curve-cryptography)
 # 密钥和地址
 - 从随机数生成私钥
 - 以太坊公钥是一个椭圆曲线上的点point，意思是它是一组满足椭圆曲线方程的X和Y坐标,公钥使用椭圆曲线乘法和私钥计算，这是不可逆的：K = k * G，其中k是私钥，G是一个称为generator point的常数点，K是结果公钥
