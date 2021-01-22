@@ -14,7 +14,7 @@
 
 ## 钱包类型 
 - 非确定性钱包 nondeterministic wallet
-  - 非确定性（随机）钱包
+  - 非确定性（随机）钱包 
 - 确定性钱包 deterministic wallet
   - 确定性（种子）钱包
   - HD 钱包 (BIP-32/BIP-44)
