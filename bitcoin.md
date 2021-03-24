@@ -191,6 +191,47 @@ https://blog.hubspot.com/marketing/bitcoin-address#:~:text=A%20Bitcoin%20address
     ]
 }
 ```
+- /api/v2/tx/b0f463c861564eb0bc63001b350fd40f7df8d684a93f1c8b2db34b341a00406f
+- https://btc.com/e0d6d6366d586634f4463d94abc0967ee573de82ad0f4d3c74502a4b9e09b3b6
+```
+{
+    "txid": "b0f463c861564eb0bc63001b350fd40f7df8d684a93f1c8b2db34b341a00406f",
+    "version": 2,
+    "vin": [
+        {
+            "txid": "e0d6d6366d586634f4463d94abc0967ee573de82ad0f4d3c74502a4b9e09b3b6",
+            "vout": 1346,
+            "sequence": 4294967295,
+            "n": 0,
+            "addresses": [
+                "1ADi5pMSK1dgM4wdtAAMQKa8PEfVMXXf1C"
+            ],
+            "isAddress": true,
+            "value": "1016",
+            "hex": "4730440220145db22e1f91ec2eaa94f04308b647c902fd40e875df81eb3decf579f9085f3a022013d85459b4b3a0b611c625c3462a65a039ec8a0f1ceb0cd23775ec572a8ba2520121024f973df7163cb403b5092514a715a6f4c400577d3e6cc3a9c2a9dfbcdf8710f6"
+        }
+    ],
+    "vout": [
+        {
+            "value": "825",
+            "n": 0,
+            "hex": "76a914958dd62e10a8f9bef6dcb6a0456bf86e3850238888ac",
+            "addresses": [
+                "1EdmbZnbHRny9PASgW2tV9sVKcEf1FG282"
+            ],
+            "isAddress": true
+        }
+    ],
+    "blockHash": "0000000000000000000a66fc581f96c5832b8b81031501f2d22e188be50ee252",
+    "blockHeight": 675715,
+    "confirmations": 370,
+    "blockTime": 1616383153,
+    "value": "825",
+    "valueIn": "1016",
+    "fees": "191",
+    "hex": "0200000001b6b3099e4b2a50743c4d0fad82de73e57e96c0ab943d46f43466586d36d6d6e0420500006a4730440220145db22e1f91ec2eaa94f04308b647c902fd40e875df81eb3decf579f9085f3a022013d85459b4b3a0b611c625c3462a65a039ec8a0f1ceb0cd23775ec572a8ba2520121024f973df7163cb403b5092514a715a6f4c400577d3e6cc3a9c2a9dfbcdf8710f6ffffffff0139030000000000001976a914958dd62e10a8f9bef6dcb6a0456bf86e3850238888ac00000000"
+}
+```
 - /api/v2/xpub/xpub661MyMwKB68aQvxD4NtkMhrnz1KtPuCHynN7jxXeNx4mYPHbAQhYWNaoV4kqLUdCHZqYkTVpMER6QG9pXDLMPksiMDM9JqjKecpzWrYeiJv?details=txslight&pageSize=1&token=used
 ```
 {
