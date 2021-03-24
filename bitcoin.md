@@ -77,8 +77,167 @@ https://blog.hubspot.com/marketing/bitcoin-address#:~:text=A%20Bitcoin%20address
 
 # blockbook api
 ## 支持的blockchain及地址协议
+- https://github.com/trezor/blockbook/blob/master/docs/api.md
 
 ## api解析
-
+- /api/v2/address/0xb3e04bc11D465439f538d9AB36Cb2873291ce07b?details=txslight&pageSize=1
+```
+{
+    "page": 1,
+    "totalPages": 6,
+    "itemsOnPage": 1,
+    "address": "0xB3E04bC11D465439f538d9AB36Cb2873291ce07B",
+    "balance": "0",
+    "unconfirmedBalance": "0",
+    "unconfirmedTxs": 0,
+    "txs": 6,
+    "nonTokenTxs": 5,
+    "transactions": [
+        {
+            "txid": "0x9633fbe9532bf9da3c813b3747cc19324b9e46eb57a9a10d31ec8d8ca53a28d6",
+            "vin": [
+                {
+                    "n": 0,
+                    "addresses": [
+                        "0xB3E04bC11D465439f538d9AB36Cb2873291ce07B"
+                    ],
+                    "isAddress": true
+                }
+            ],
+            "vout": [
+                {
+                    "value": "157123630000000000",
+                    "n": 0,
+                    "addresses": [
+                        "0x897E883B637b0A828f2227eBBA056FCfec9Bd6eA"
+                    ],
+                    "isAddress": true
+                }
+            ],
+            "blockHash": "0xfd80b088edb9ec886b7523986db23b44f0057ce2b247762844025e94ba0750ac",
+            "blockHeight": 12093471,
+            "confirmations": 7522,
+            "blockTime": 1616480785,
+            "value": "157123630000000000",
+            "fees": "3339000000000000",
+            "ethereumSpecific": {
+                "status": 1,
+                "nonce": 3,
+                "gasLimit": 21000,
+                "gasUsed": 21000,
+                "gasPrice": "159000000000",
+                "data": "0x"
+            }
+        }
+    ],
+    "nonce": "4",
+    "tokens": [
+        {
+            "type": "ERC20",
+            "name": "USD Coin",
+            "contract": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            "transfers": 2,
+            "symbol": "USDC",
+            "decimals": 6,
+            "balance": "0"
+        }
+    ]
+}
+```
+- /api/v2/address/1ADi5pMSK1dgM4wdtAAMQKa8PEfVMXXf1C?details=txslight&pageSize=1
+```
+{
+    "page": 1,
+    "totalPages": 2,
+    "itemsOnPage": 1,
+    "address": "1ADi5pMSK1dgM4wdtAAMQKa8PEfVMXXf1C",
+    "balance": "0",
+    "totalReceived": "1016",
+    "totalSent": "1016",
+    "unconfirmedBalance": "0",
+    "unconfirmedTxs": 0,
+    "txs": 2,
+    "transactions": [
+        {
+            "txid": "b0f463c861564eb0bc63001b350fd40f7df8d684a93f1c8b2db34b341a00406f",
+            "vin": [
+                {
+                    "n": 0,
+                    "addresses": [
+                        "1ADi5pMSK1dgM4wdtAAMQKa8PEfVMXXf1C"
+                    ],
+                    "isAddress": true,
+                    "value": "1016"
+                }
+            ],
+            "vout": [
+                {
+                    "value": "825",
+                    "n": 0,
+                    "addresses": [
+                        "1EdmbZnbHRny9PASgW2tV9sVKcEf1FG282"
+                    ],
+                    "isAddress": true
+                }
+            ],
+            "blockHash": "0000000000000000000a66fc581f96c5832b8b81031501f2d22e188be50ee252",
+            "blockHeight": 675715,
+            "confirmations": 369,
+            "blockTime": 1616383153,
+            "value": "825",
+            "valueIn": "1016",
+            "fees": "191"
+        }
+    ]
+}
+```
+- /api/v2/xpub/xpub661MyMwKB68aQvxD4NtkMhrnz1KtPuCHynN7jxXeNx4mYPHbAQhYWNaoV4kqLUdCHZqYkTVpMER6QG9pXDLMPksiMDM9JqjKecpzWrYeiJv?details=txslight&pageSize=1&token=used
+```
+{
+    "page": 1,
+    "totalPages": 6,
+    "itemsOnPage": 1,
+    "address": "xpub661MyMwKB68aQvxD4NtkMhrnz1KtPuCHynN7jxXeNx4mYPHbAQhYWNaoV4kqLUdCHZqYkTVpMER6QG9pXDLMPksiMDM9JqjKecpzWrYeiJv",
+    "balance": "0",
+    "totalReceived": "586701",
+    "totalSent": "586701",
+    "unconfirmedBalance": "0",
+    "unconfirmedTxs": 0,
+    "txs": 6,
+    "transactions": [
+        {
+            "txid": "be5896ec764d64144cf66e6c8d4e46899d23eefb470a9a8494b17e15378dedf0",
+            "vin": [
+                {
+                    "n": 0,
+                    "addresses": [
+                        "14ury9LoJQXo2dPRjBU8dgXbre2YdpsiYL"
+                    ],
+                    "isAddress": true,
+                    "value": "50000"
+                }
+            ],
+            "vout": [
+                {
+                    "value": "42360",
+                    "n": 0,
+                    "addresses": [
+                        "3Bw1FaPWqvvuCEjjxhkBSz3F9Tw67ooxQb"
+                    ],
+                    "isAddress": true
+                }
+            ],
+            "blockHash": "000000000000000000076cfe57288176169b69971e8db4c0db44ae3b602c3a39",
+            "blockHeight": 669196,
+            "confirmations": 6889,
+            "blockTime": 1612516423,
+            "value": "42360",
+            "valueIn": "50000",
+            "fees": "7640"
+        }
+    ],
+    "usedTokens": 3
+}
+```
 
 
