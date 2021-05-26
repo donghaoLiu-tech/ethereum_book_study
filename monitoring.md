@@ -9,11 +9,12 @@
 ## what do we need to monitoring
 ### physical resources
 - cpu usage
-- jvm heap
+- memory
+- jvm
+- gc
 - threads
 - thread states
 - log event
-- gc
 ### middleware
 - postgresql
     - slow query
@@ -54,7 +55,7 @@
         ![Prometheus Architecture](images/show_dashboard.png)
     - create self-define dashboard
         ![Prometheus Architecture](images/create_panel.png)
-        ![Prometheus Architecture](images/add query.png)
+        ![Prometheus Architecture](images/add_query.png)
 - set up alert config on Grafana
     - create notify channel
     ![Prometheus Architecture](images/notify_channel.png)
