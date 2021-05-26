@@ -1,8 +1,8 @@
 # tax-logic monitoring
 ## why need monitoring
 - without monitoring
-    - restart/shutdown not found(cannot get the service status directly)
-    - to locate the issue is difficult(need to login the aws)
+    - restart/shutdown not found
+    - to locate the issue is difficult
     - improvement performance is difficult(need to locate the key point,history data,and so on)
 - with monitoring
     - solve most of the above problems, keep it more and more stable
