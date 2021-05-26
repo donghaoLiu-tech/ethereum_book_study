@@ -11,7 +11,6 @@
 - cpu usage
 - memory
 - jvm
-- gc
 - threads
 - thread states
 - log event
@@ -40,7 +39,15 @@
     - opensource
     - Architecture
         ![Prometheus Architecture](images/architecture.png)
-
+- internal java metrics
+    - http(as client,as server)
+    - jvm
+    - jdbc
+    - logback
+    - process
+    - system
+    - up
+    
 - set up monitoring config on Grafana
     - import dashboard
         - login grafana,select import
@@ -69,9 +76,8 @@ Prometheus values reliability. You can always view what statistics are available
 ```
 ## Newrelic
 - introduction
-    - keep stable even if prometheus service is down
 - set up monitoring config
-    - restful api
+    - external api status
     - service map(external api)
 
 ## recommended flow
